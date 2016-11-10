@@ -25,7 +25,10 @@ class TweetsController < ApplicationController
     %w(TWITTER_CONSUMER_KEY TWITTER_CONSUMER_SECRET
        TWITTER_ACCESS_TOKEN TWITTER_ACCESS_SECRET
        FUZZY_API_KEY FUZZY_AGENT_ID).each do |key|
-      redirect_to :setup if ENV[key].blank?
+      if ENV[key].blank?
+        redirect_to :setup
+        break
+      end
     end
   end
 
