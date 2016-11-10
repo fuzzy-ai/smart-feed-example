@@ -1,1 +1,33 @@
 <h1>Setup instructions</h1>
+
+<h2>Create a twitter application</h2>
+
+<ol>
+  <li>Visit <a href="https://apps.twitter.com/">apps.twitter.com</a>, sign in and click "Create New App".</li>
+  <li>Complete the form with appropriate values, then click on "Keys and Access Tokens"</li>
+  <li>From the "Application Settings" section, copy the following environment variables:
+    <ul>
+      <li>"Consumer Key (API Key)" as <code>TWITTER_CONSUMER_KEY</code></li>
+      <li>"Consumer Secret (API Secret)" as <code>TWITTER_CONSUMER_SECRET</code></li>
+    </ul>
+  </li>
+  <li>From the "Your Access Token" section, copy the following values:
+    <ul>
+      <li>"Access Token" as <code>TWITTER_ACCESS_TOKEN</code></li>
+      <li>"Access Token Secret" as <code>TWITTER_ACCESS_SECRET</code></li>
+    </ul>
+  </li>
+</ol>
+
+<h2>Create a Fuzzy.ai Agent</h2>
+
+<ol>
+  <li>If you haven't done so already, create an account at <a href="https://fuzzy.ai/signup">https://fuzzy.ai/signup</a> and log in.</li>
+  <li>From your fuzzy.ai dashboard, copy your api key to the environment variable <code>FUZZY_API_KEY</code>.</li>
+  <li>Visit <a href="https://fuzzy.ai/agents/new/tweet-relevance">https://fuzzy.ai/agents/new/tweet-relevance</a> and click "Create".</li>
+  <li>Copy the agent ID from the newly created agent to the environment variable <code>FUZZY_AGENT_ID</code></li>
+</ol>
+
+<h2>Ready?</h2>
+
+View the tweets <%= link_to 'here', root_url %>
