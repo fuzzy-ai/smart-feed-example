@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Example Rails application for a "tweet relevance" agent using https://fuzzy.ai/
 
-Things you may want to cover:
+## Local installation
 
-* Ruby version
+### Requirements
 
-* System dependencies
+* Ruby 2.3.1
+* Postgresql
 
-* Configuration
+### Steps
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Clone the repository
+1. Run `bundle install`
+1. Run `rails db:create`
+1. Copy `env.sample` to `.env`
+1. Run `rails server`
+1. Load the site at http://localhost:3000/
