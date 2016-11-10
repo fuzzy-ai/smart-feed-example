@@ -1,0 +1,34 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.scores {
+  font-family: "Helvetica Neue",Roboto,"Segoe UI",Calibri,sans-serif;
+  background-color: white;
+  box-shadow: 2px 2px 5px #888888;
+  border-radius: 2px;
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  width: 510px;
+}
+
+.fave, .share, .age, .relevance {
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.relevancetitle, .favetitle, .sharetitle, .agetitle {
+  font-size: 1em;
+  color: #999999;
+}
+.favescore, .sharescore, .agescore {
+  font-size: 1.3em;
+  font-weight: 500;
+  color: #444444;
+
+}
+ .relevancescore {
+  font-size: 1.3em;
+  font-weight: 500;
+}
