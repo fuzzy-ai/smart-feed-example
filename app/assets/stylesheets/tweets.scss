@@ -2,33 +2,60 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "reset";
+@import "base";
+
+
 .scores {
   font-family: "Helvetica Neue",Roboto,"Segoe UI",Calibri,sans-serif;
   background-color: white;
-  box-shadow: 2px 2px 5px #888888;
+  box-shadow: 2px 2px 5px rgba(#888888, 0);
   border-radius: 2px;
-  margin: 5px 5px 5px 5px;
-  padding: 5px 5px 5px 5px;
-  width: 510px;
+  margin: 20px auto;
+  padding: 10px 0px;
+  max-width: 500px;
+  width: 100%;
+  border:1px solid lighten(#ccd6dd,5%);
+  border-radius:0;
+  background:lighten(#eee, 5%);
+  transition: all .3s ease-in;
+
+  &:hover {
+    background:#fff;
+    box-shadow: 2px 2px 5px rgba(#888888, .25);
+  }
+
+  .scores__content{
+    margin:10px 0;
+    padding:0px 20px;
+    }
 }
 
-.fave, .share, .age, .relevance {
+.user-data {
   display: inline-block;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0px;
+  min-width: 49%;
+  padding: 10px 0px ;
+
+  @media only screen and (min-width: 640px){
+    min-width: 24.25%;
+  }
 }
 
-.relevancetitle, .favetitle, .sharetitle, .agetitle {
-  font-size: 1em;
-  color: #999999;
+.user-data__title {
+  font-size: .7em;
+  letter-spacing:1px;
+  font-weight:600;
+  color: #07121e;
+  text-transform:uppercase;
 }
-.favescore, .sharescore, .agescore {
+.user-data__value {
   font-size: 1.3em;
-  font-weight: 500;
-  color: #444444;
+  font-weight: 400;
+  color: #b1bbc3;
+}
 
-}
- .relevancescore {
-  font-size: 1.3em;
-  font-weight: 500;
+
+a, .TweetAuthor-screenName .Identity-screenName, .customisable-highlight {
+  color:#55ACEE !important;
 }

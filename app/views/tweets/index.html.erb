@@ -1,4 +1,4 @@
-<h1>Tweet by relevance</h1>
+<h1 class="title">Tweet by relevance</h1>
 <% if @error %>
   <div class="error">
     <%= @error %>
@@ -6,27 +6,27 @@
 <% end %>
 <% @tweets.each do |relevance, tweet| %>
   <div class="scores">
-    <div>
+    <div class="scores__content">
       <blockquote class="twitter-tweet" lang="en" cards="hidden">
-        <b><%= tweet.user.screen_name %></b> <em><%= tweet.created_at %></em>
+        <b><%= tweet.user.screen_name %></b>fuck <em><%= tweet.created_at %></em>
         <a href="<%= tweet.url %>">Link</a>
       </blockquote>
-    </div>
-    <div class="fave">
-      <div class="favetitle">Favorites</div>
-      <div class="favescore"><%= tweet.favorite_count %></div>
-    </div>
-    <div class="share">
-      <div class="sharetitle">Retweets</div>
-      <div class="sharescore"><%= tweet.retweet_count %></div>
-    </div>
-    <div class="age">
-      <div class="agetitle">Age</div>
-      <div class="agescore"><%= age_in_minutes(tweet.created_at) %></div>
-    </div>
-    <div class="relevance">
-      <div class="relevancetitle">Relevance</div>
-     <div class="relevancescore"><%= number_with_precision(relevance) %></div>
+      <div class="fave user-data">
+        <div class="favetitle user-data__title">Favorites</div>
+        <div class="favescore user-data__value"><%= tweet.favorite_count %></div>
+      </div>
+      <div class="share user-data">
+        <div class="sharetitle user-data__title">Retweets</div>
+        <div class="sharescore user-data__value"><%= tweet.retweet_count %></div>
+      </div>
+      <div class="age user-data">
+        <div class="agetitle user-data__title">Age</div>
+        <div class="agescore user-data__value"><%= age_in_minutes(tweet.created_at) %></div>
+      </div>
+      <div class="relevance user-data">
+        <div class="relevancetitle user-data__title">Relevance</div>
+       <div class="relevancescore user-data__value"><%= number_with_precision(relevance) %></div>
+      </div>
     </div>
   </div>
 <% end %>
