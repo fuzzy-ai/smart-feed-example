@@ -28,7 +28,6 @@
         "FUZZY_AGENT_ID": {
             "description": "Agent ID from your tweet relevance agent: https://fuzzy.ai/agents/new/tweet-relevance",
             "required": true
-        },
-
+        }
     }
 }
