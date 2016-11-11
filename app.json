@@ -1,6 +1,6 @@
 {
-    "name": "Fuzzy.ai Tweet Relevance Example",
-    "description": "",
+    "name": "Tweet Relevance",
+    "description": "Fuzzy.ai Tweet Relevance Example",
     "keywords": ["Fuzzy", "Fuzzy.ai", "ruby", "rails", "twitter"],
     "website": "https://github.com/fuzzy-ai/tweet-relevance-rails",
     "success_url": "/",
