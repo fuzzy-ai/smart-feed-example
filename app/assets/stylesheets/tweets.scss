@@ -9,7 +9,7 @@
 .scores {
   font-family: "Helvetica Neue",Roboto,"Segoe UI",Calibri,sans-serif;
   background-color: white;
-  box-shadow: 2px 2px 5px rgba(#888888, 0);
+  box-shadow: 0 8px 6px -6px  rgba(#888888, 0);
   border-radius: 2px;
   margin: 20px auto;
   padding: 10px 0px;
@@ -18,11 +18,11 @@
   border:1px solid lighten(#ccd6dd,5%);
   border-radius:0;
   background:lighten(#eee, 5%);
-  transition: all .3s ease-in;
+  transition: all .4s ease-in;
 
   &:hover {
     background:#fff;
-    box-shadow: 2px 2px 5px rgba(#888888, .25);
+    box-shadow: 0 8px 6px -6px  rgba(#888888, .25);
   }
 
   .scores__content{
