@@ -34,6 +34,8 @@ After clicking the button above, you will be prompted for the configuration vari
 
 ### Docker Cloud
 
+Before you deploy to Docker Cloud, make sure you have an account and are logged in: at [https://cloud.docker.com/](https://cloud.docker.com/)
+
 [![Deploy to Docker Cloud](https://files.cloud.docker.com/images/deploy-to-dockercloud.svg)](https://cloud.docker.com/stack/deploy/)
 
 After clicking the button above, you will have an opportunity to edit the with the values from the previous section.
