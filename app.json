@@ -1,0 +1,34 @@
+{
+    "name": "Fuzzy.ai Tweet Relevance Example",
+    "description": "",
+    "keywords": ["Fuzzy", "Fuzzy.ai", "ruby", "rails", "twitter"],
+    "website": "https://github.com/fuzzy-ai/tweet-relevance-rails",
+    "success_url": "/",
+    "env": {
+        "TWITTER_CONSUMER_KEY": {
+            "description": "Consumer Key (API Key) from your twitter app",
+            "required": true
+        },
+        "TWITTER_CONSUMER_SECRET": {
+            "description": "Consumer Secret (API Secret) from your twitter app",
+            "required": true
+        },
+        "TWITTER_ACCESS_TOKEN": {
+            "description": "Access Token from your twitter app",
+            "required": true
+        },
+        "TWITTER_ACCESS_SECRET": {
+            "description": "Access Token Secret from your twitter app",
+            "required": true
+        },
+        "FUZZY_API_KEY": {
+            "description": "API Key from your Fuzzy.ai dashboard.",
+            "required": true
+        },
+        "FUZZY_AGENT_ID": {
+            "description": "Agent ID from your tweet relevance agent: https://fuzzy.ai/agents/new/tweet-relevance",
+            "required": true
+        },
+
+    }
+}
