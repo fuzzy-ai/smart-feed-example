@@ -35,6 +35,14 @@ li{
 
 .title{
   text-align:center;
+  &:before {
+    content: "";
+    background: #55ACEE;
+    height:1px;
+    width:80px;
+    margin:0px auto 40px;
+    display:block;
+  }
 }
 
 .container{
