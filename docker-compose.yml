@@ -1,0 +1,19 @@
+web:
+  build: .
+  links:
+    - db
+  ports:
+    - "80:3000"
+  environment:
+    RACK_ENV: development
+    RAILS_ENV: development
+    DATABASE_URL: postgres://postgres@db/postgres
+    SECRET_KEY_BASE: ""
+    TWITTER_CONSUMER_KEY: ""
+    TWITTER_CONSUMER_SECRET: ""
+    TWITTER_ACCESS_TOKEN: ""
+    TWITTER_ACCESS_SECRET: ""
+    FUZZY_API_KEY: ""
+    FUZZY_AGENT_ID: ""
+db:
+  image: postgres
